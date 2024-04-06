@@ -16,5 +16,10 @@ namespace PDV.app
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Bem vindo {TBName.Text}");
+        }
     }
 }
