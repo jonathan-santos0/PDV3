@@ -32,13 +32,15 @@
             TBName = new TextBox();
             label2 = new Label();
             button1 = new Button();
+            TBPassword = new TextBox();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial Narrow", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(126, 9);
             label1.Name = "label1";
             label1.Size = new Size(219, 25);
             label1.TabIndex = 0;
@@ -46,15 +48,15 @@
             // 
             // TBName
             // 
-            TBName.Location = new Point(12, 60);
+            TBName.Location = new Point(143, 74);
             TBName.Name = "TBName";
-            TBName.Size = new Size(116, 23);
+            TBName.Size = new Size(184, 23);
             TBName.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 42);
+            label2.Location = new Point(177, 56);
             label2.Name = "label2";
             label2.Size = new Size(116, 15);
             label2.TabIndex = 2;
@@ -62,7 +64,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(134, 60);
+            button1.Location = new Point(193, 156);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 3;
@@ -70,11 +72,30 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // TBPassword
+            // 
+            TBPassword.Location = new Point(143, 127);
+            TBPassword.Name = "TBPassword";
+            TBPassword.PasswordChar = '*';
+            TBPassword.Size = new Size(184, 23);
+            TBPassword.TabIndex = 4;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(177, 109);
+            label3.Name = "label3";
+            label3.Size = new Size(116, 15);
+            label3.TabIndex = 5;
+            label3.Text = "Entre com sua senha";
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(792, 450);
+            ClientSize = new Size(461, 450);
+            Controls.Add(label3);
+            Controls.Add(TBPassword);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(TBName);
@@ -91,5 +112,7 @@
         private TextBox TBName;
         private Label label2;
         private Button button1;
+        private TextBox TBPassword;
+        private Label label3;
     }
 }
