@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace PDV.app
 {
-    public partial class Calculadora : Form
+    public partial class janelaInício : Form
     {
-        public Calculadora()
+        public janelaInício()
         {
             InitializeComponent();
-        }
-
-        private void BTSomar_Click(object sender, EventArgs e)
-        {
-            decimal total = NUDValor1.Value + NUDValor2.Value;
-            LBResultado.Text = $"resultado: {total}";
         }
     }
 }

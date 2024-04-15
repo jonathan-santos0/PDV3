@@ -34,6 +34,7 @@
             button1 = new Button();
             TBPassword = new TextBox();
             label3 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -64,9 +65,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(193, 156);
+            button1.Location = new Point(177, 156);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(104, 27);
             button1.TabIndex = 3;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = true;
@@ -89,11 +90,22 @@
             label3.TabIndex = 5;
             label3.Text = "Entre com sua senha";
             // 
+            // button2
+            // 
+            button2.Location = new Point(177, 189);
+            button2.Name = "button2";
+            button2.Size = new Size(104, 28);
+            button2.TabIndex = 6;
+            button2.Text = "INSCREVA-SE";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(461, 450);
+            ClientSize = new Size(461, 401);
+            Controls.Add(button2);
             Controls.Add(label3);
             Controls.Add(TBPassword);
             Controls.Add(button1);
@@ -114,5 +126,6 @@
         private Button button1;
         private TextBox TBPassword;
         private Label label3;
+        private Button button2;
     }
 }
